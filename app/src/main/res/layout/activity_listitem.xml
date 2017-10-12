@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#6bbcb8"
+    android:clickable="true"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/text_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Resep"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_Resep"/>
+
+        <TextView
+            android:id="@+id/text_penjelasan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="penjelasan"
+            android:textSize="15dp"
+            android:gravity="left"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@id/text_judul"
+            android:layout_toRightOf="@+id/image_Resep"/>
+
+        <ImageView
+            android:id="@+id/image_Resep"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
